@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500&family=Open+Sans:wght@300;400;500&family=Poppins:ital,wght@0,600;1,400&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+body {
+    background: linear-gradient(120deg, #dd4cc5d8, #e42525da);
+}
+
+.container-cabeçalho{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 110px;
+    height: auto;
+   
+    
+}
+
+.logo h1{
+    color: #ffffff;
+    font-size: 1.rem;
+    font-weight: 600;
+    margin-left: 0.8rem;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 5rem;
+    font-size: 2.5rem;
+    
+  
+    
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+   
+   
+
+}
+
+ul li a:hover{
+    color: #af15da;
+    transition: 1s;
+}
+
+.btn{
+    background-color: #f243d5;
+    padding: 0.9rem 1.3rem;
+    border-radius: 0.5rem;
+}
+
+.btn:hover{
+    background-color: rgb(255, 127, 204);
+    transition: 1s;
+}
+
+.Meio{
+    display: flex;
+    max-width: 100%;
+    margin-top: 5rem;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.Direita img{
+    max-width: 100%;
+    width: 700px;
+    height: auto;
+   
+    
+}
+
+.Esquerda{
+    max-width: 100%;
+}
+
+.title h1{
+    font-size: 50px;
+    color: #fff;
+
+}
+
+.Esquerda p{
+    color: #ffff;
+    line-height: 2.5rem;
+    font-size: 1.9rem;
+    font-family:"poppins";
+    
+}
+
+button{
+    color: #af15da;
+    background-color: #f243d5;
+    padding: 0.9rem 1.3rem;
+    border-radius: 0.6rem;
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+button:hover{
+    color: #af15da;
+    background-color: rgb(255, 127, 204);
+    color: #af15da;
+    transition: 1s;
+}
+
+aside{
+    display: none;
+
+}
+@media screen and (max-width:740px) {
+
+    ul{
+        display: none;
+    }
+
+    .links{
+        display: block;
+    }
+
+    .logo{
+        margin-right: 15rem;
+    }
+
+    aside{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        overflow: hidden;
+    }
+
+    #Barra-menu{
+        background-color: rgb(248, 111, 232);
+        width: 0px;
+        height: 100vh;
+        transition: 0.3s all;
+    }
+
+    .logo1 img{
+        width: 200px;
+        height: auto;
+        margin-left: 4rem;
+        overflow: hidden;
+        background-color: #da158570;
+        
+        
+
+   
+    }
+
+    .Icon-menu ion-icon{
+        width: 45px;
+        height: 45px;
+        margin-right: 1.5rem;
+        margin-top: 2rem;
+        color: #fff;
+    }
+
+    #Barra-menu ul{
+        align-items: center;
+        text-align: center;
+        padding: 5rem;
+        line-height:5rem;
+    }
+    #Barra-menu ul li a{
+        color: #af15da;
+        text-decoration: none;
+        font-size: 1.6rem;
+        width: 100%;
+    }
+
+    #Barra-menu ul li a:hover{
+        padding: 8px;
+        border-radius: 15px;
+        background-color: rgb(242, 11, 246);
+        
+    }
+    
+    .C-Icon{
+        margin-top: 40%;
+        justify-content: center;
+        display: flex;
+        gap: 15px;
+        overflow: hidden;
+    }
+
+    .C-Icon span{
+        color: hwb(316 3% 22%);
+        font-size: 1.rem;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width:580px){
+    .Title h1{
+        font-size: 2.2rem;
+        margin-left: 1.5rem;
+    }
+    .Esquerda p{
+        font-size: 1rem;
+        margin-left: 1.5rem;
+        width: 450px;
+    }
+
+    button{
+        margin-left: 1.5rem;
+    }
+
+    .Direita img {
+        margin-right: 100%;
+        width: 4450px;
+        margin-top: 4.5rem;
+        height: auto;
+    }
+
+    @media screen and (max-width:440px){
+        .Direita img{
+            margin-left: 1.2rem;
+        }
+        .Esquerda p{
+            width: 400px;
+        }
+    }
+}
